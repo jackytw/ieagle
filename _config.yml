@@ -22,7 +22,7 @@ title: iEagle
 email: service@oitsc.com
 description: >- # this means to ignore newlines until "baseurl:"
   AI defact detect solustion
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/ieagle" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
@@ -53,7 +53,14 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
+defaults:
+  - scope:
+      path: "uploads"
+    values:
+      image: true
+
 sass:
+  sass_dir: _sass
   quiet_deps: true
   silence_deprecations: [import]
 
